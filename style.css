@@ -1,0 +1,174 @@
+/* Critério 1 : Formato e Responsividade */
+
+/* Geral */
+
+body{
+    background-color: rgba(23, 110, 155, 0.09);
+    font-family: Arial;
+}
+
+/* Header */
+
+.fundo{
+    background-color: rgb(23, 110, 155);
+}
+
+.header {
+    width: 100%;
+    align-items: center;
+    padding: 1% 5%;
+}
+
+label{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#search-button{
+    width: 10%;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border: white solid 1px;
+}
+
+#search-input{
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    width: 40%;
+}
+
+.atualizacao{
+    font-size: 0.7em ;
+    text-decoration: none;
+    float: right;
+    margin-top: 1.4%;
+}
+
+/* Footer */
+
+.footer {
+    background-color: rgb(23, 110, 155);
+    color: white;
+    padding: 1%;
+    text-align: center;
+}
+
+.footer .logo{
+    width: 5%;
+    margin-left: 20%;
+}
+
+/* Main */
+
+main{
+    margin: 3.5% 5%;
+}
+
+#info{
+    padding: 5%;
+}
+
+.user{
+    margin-top: -3%;
+}
+
+.bio{
+    margin-top: 3%;
+}
+
+.card-img-top{
+    width: 50%;
+}
+
+.btn{
+    background-color: rgb(23, 110, 155);
+    color: white !important;
+}
+
+.rep{
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.list{
+    text-decoration: none;
+}
+
+.list:hover{
+    text-decoration: underline;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1126px) and (min-width: 768px) {
+    .atualizacao{
+        display: none;
+    }
+
+    .perfil{
+        height: 40% !important;
+    }
+
+    .list-group-item{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .user{
+        margin-top: 1%;
+    }
+
+    .logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header{
+        padding-bottom: 2%;
+    }
+
+    #search-input{
+        margin-left: 5.5%;
+        width: 74.5%;
+    }
+
+    #search-button{
+        width: 20%;
+    }
+
+    main{
+        margin: 2.5%;
+        width: 94.5%;
+    }
+
+    .perfil{
+        width: 50% !important;
+    }
+
+    .list-group-item{
+        font-size: 0.9em;
+    }
+
+    .user{
+        margin-top: 0;
+    }
+
+    #rep_rows{
+        margin-top: 2%;
+    }
+
+    .rep{
+        margin-left: 0.5%;
+        width: 49%;
+    }
+
+    .atualizacao{
+        display: none;
+    }
+
+}
